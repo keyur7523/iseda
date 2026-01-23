@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISEDA | International Institute of Etiquette & Diplomatic Arts</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header" role="banner">
+      <div class="container header__inner">
+        <a class="header__logo" href="#hero" aria-label="ISEDA home">
+          <img
+            src="assets/images/ISEDA_Logo_dark.png"
+            alt="ISEDA - International Institute of Etiquette & Diplomatic Arts"
+            class="header__logo-img"
+          />
+        </a>
+
+        <nav class="header__nav" aria-label="Main navigation">
+          <ul class="header__nav-list">
+            <li><a class="header__nav-link" href="#about">About</a></li>
+            <li><a class="header__nav-link" href="#programs">Programs</a></li>
+            <li><a class="header__nav-link" href="#hotels">Hotels</a></li>
+            <li><a class="header__nav-link" href="#corporations">Corporations</a></li>
+            <li><a class="header__nav-link" href="#private">Private Clients</a></li>
+            <li><a class="header__nav-link" href="#insights">Insights</a></li>
+            <li><a class="header__nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <a class="btn btn--primary header__cta" href="#contact">
+            Request Consultation
+          </a>
+        </nav>
+
+        <button
+          class="header__menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="header__menu-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Drawer -->
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu__panel" role="dialog" aria-label="Mobile menu">
+          <ul class="mobile-menu__list">
+            <li><a class="mobile-menu__link" href="#about">About</a></li>
+            <li><a class="mobile-menu__link" href="#programs">Programs</a></li>
+            <li><a class="mobile-menu__link" href="#hotels">Hotels</a></li>
+            <li><a class="mobile-menu__link" href="#corporations">Corporations</a></li>
+            <li><a class="mobile-menu__link" href="#private">Private Clients</a></li>
+            <li><a class="mobile-menu__link" href="#insights">Insights</a></li>
+            <li><a class="mobile-menu__link" href="#contact">Contact</a></li>
+          </ul>
+
+          <a class="btn btn--primary btn--full-width mobile-menu__cta" href="#contact">
+            Request Consultation
+          </a>
+        </div>
+
+        <div class="mobile-menu__backdrop" aria-hidden="true"></div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main-content">
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="container hero__content">
+          <img
+            class="hero__logo"
+            src="assets/images/ISEDA_Logo_white.png"
+            alt="ISEDA - International Institute of Etiquette & Diplomatic Arts"
+          />
+
+          <p class="small-caps hero__tagline">
+            International Institute of Etiquette &amp; Diplomatic Arts
+          </p>
+
+          <h1 class="hero__title">
+            Where Elegance<br />
+            Meets Diplomacy
+          </h1>
+
+          <p class="hero__subtitle">
+            A global institution dedicated to elevating leaders and organizations through etiquette,
+            diplomacy, and executive excellence.
+          </p>
+
+          <div class="hero__cta-group">
+            <a class="btn btn--primary" href="#contact">Request a Private Consultation</a>
+            <a class="btn btn--secondary" href="#programs">Explore Programs</a>
+          </div>
+        </div>
+
+        <div class="hero__scroll-indicator" aria-hidden="true">
+          <span class="hero__scroll-text">Scroll</span>
+          <span class="hero__scroll-line"></span>
+        </div>
+      </section>
+
+      <!-- ABOUT (Task 5.1) -->
+      <section class="section about" id="about">
+        <div class="container container--medium">
+          <p class="small-caps">About ISEDA</p>
+          <h2>Elevating Global Standards of Etiquette &amp; Diplomacy</h2>
+
+          <div class="divider-gold"></div>
+
+          <p>
+            The International Institute of Etiquette &amp; Diplomatic Arts (ISEDA) is a premier global
+            institution dedicated to cultivating excellence in etiquette, protocol, diplomacy, and
+            executive presence.
+          </p>
+
+          <p>
+            Through refined training programs, private consultations, and organizational advisory
+            services, ISEDA empowers leaders, professionals, and institutions to navigate complex
+            social, cultural, and diplomatic environments with confidence and grace.
+          </p>
+        </div>
+      </section>
+
+      <!-- PROGRAMS -->
+      <section id="programs" class="section programs">
+        <div class="container">
+          <header class="section-header">
+            <p class="small-caps">Our Programs</p>
+            <h2>Comprehensive Excellence Training</h2>
+            <div class="divider-gold"></div>
+            <p class="section-subtitle">
+              Tailored programs designed for the world's most discerning organizations and individuals.
+            </p>
+          </header>
+      
+          <div class="programs__grid">
+            <!-- Program 1 -->
+            <article class="program-card">
+              <div class="program-card__icon" aria-hidden="true">
+                <i data-lucide="briefcase"></i>
+              </div>
+              <h3>Corporate Leadership &amp; Business Etiquette</h3>
+              <p>
+                ISEDA prepares executive teams for high-level leadership environments where communication, presence, and influence define success.
+              </p>
+              <ul class="program-card__modules">
+                <li>Executive Presence</li>
+                <li>Business Etiquette</li>
+                <li>Cross-Cultural Intelligence</li>
+                <li>Strategic Communication</li>
+                <li>Leadership Under Pressure</li>
+              </ul>
+              <a class="program-card__link" href="#contact">
+                Learn more <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+      
+            <!-- Program 2 -->
+            <article class="program-card">
+              <div class="program-card__icon" aria-hidden="true">
+                <i data-lucide="crown"></i>
+              </div>
+              <h3>Luxury Hospitality &amp; VIP Service Excellence</h3>
+              <p>
+                Designed for luxury hotels and resorts serving VIP and UHNW guests.
+              </p>
+              <ul class="program-card__modules">
+                <li>Foundations of Luxury Service</li>
+                <li>European Etiquette in Hospitality</li>
+                <li>VIP &amp; UHNW Protocol</li>
+                <li>Guest Psychology</li>
+                <li>Crisis &amp; Reputation Management</li>
+              </ul>
+              <a class="program-card__link" href="#contact">
+                Learn more <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+      
+            <!-- Program 3 -->
+            <article class="program-card">
+              <div class="program-card__icon" aria-hidden="true">
+                <i data-lucide="globe"></i>
+              </div>
+              <h3>Diplomatic &amp; International Relations</h3>
+              <p>
+                Programs for leaders and institutions operating in global environments.
+              </p>
+              <ul class="program-card__modules">
+                <li>Diplomatic Protocol</li>
+                <li>International Representation</li>
+                <li>Negotiation Excellence</li>
+                <li>Conflict Resolution</li>
+              </ul>
+              <a class="program-card__link" href="#contact">
+                Learn more <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+      
+            <!-- Program 4 -->
+            <article class="program-card">
+              <div class="program-card__icon" aria-hidden="true">
+                <i data-lucide="gem"></i>
+              </div>
+              <h3>UHNW &amp; High Society Protocol</h3>
+              <p>
+                Elite programs for private clients and families.
+              </p>
+              <ul class="program-card__modules">
+                <li>High Society Etiquette</li>
+                <li>Diplomatic Social Protocol</li>
+                <li>Personal Branding</li>
+                <li>Legacy &amp; Representation</li>
+              </ul>
+              <a class="program-card__link" href="#contact">
+                Learn more <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+      
+            <!-- Program 5 -->
+            <article class="program-card">
+              <div class="program-card__icon" aria-hidden="true">
+                <i data-lucide="shield"></i>
+              </div>
+              <h3>Leadership Under Pressure</h3>
+              <p>
+                Advanced modules focused on executive resilience and crisis leadership.
+              </p>
+              <ul class="program-card__modules">
+                <li>Executive Resilience</li>
+                <li>Emotional Intelligence</li>
+                <li>Crisis Communication</li>
+                <li>Strategic Time &amp; Energy Governance</li>
+              </ul>
+              <a class="program-card__link" href="#contact">
+                Learn more <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+          </div>
+      
+          <div class="programs__cta">
+            <a class="btn btn--primary" href="#contact">Request a Private Consultation</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOTELS -->
+      <section id="hotels" class="sectionsegment segment--hotels">
+        <div class="container">
+          <div class="segment__layout">
+            <!-- Left: Content -->
+            <div class="segment__content">
+              <p class="small-caps">For Luxury Hotels</p>
+              <h2>Elevating Hospitality to the Highest Global Standard</h2>
+              <div class="divider-gold"></div>
+      
+              <p class="segment__lead">
+                ISEDA partners with luxury hotels to create unforgettable VIP experiences and world-class service cultures.
+              </p>
+      
+              <ul class="segment__features">
+                <li class="segment__feature">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Elite service standards</span>
+                </li>
+                <li class="segment__feature">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Leadership development</span>
+                </li>
+                <li class="segment__feature">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>UHNW guest protocol</span>
+                </li>
+                <li class="segment__feature">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Brand reputation protection</span>
+                </li>
+              </ul>
+      
+              <a class="btn btn--primary segment__cta" href="#contact">
+                Request Hotel Consultation
+              </a>
+            </div>
+      
+            <!-- Right: Visual -->
+            <div class="segment__visual" aria-hidden="true">
+              <div class="segment__frame">
+                <div class="segment__frame-accent"></div>
+                <div class="segment__frame-inner">
+                  <!-- Placeholder for future image -->
+                  <div class="segment__image-placeholder"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CORPORATIONS -->
+      <section id="corporations" class="section segment segment--corporations">
+        <div class="container">
+          <div class="segment__layout">
+            <!-- Left: Content -->
+            <div class="segment__content">
+              <p class="small-caps">For Corporations</p>
+              <h2>Executive Presence, Protocol, and Global Business Culture</h2>
+              <div class="divider-gold"></div>
+      
+              <p class="segment__lead">
+                ISEDA equips corporate leaders and teams with the refinement, communication excellence, and cross-cultural fluency required to thrive in global environments.
+              </p>
+      
+              <ul class="segment__features">
+                <li class="segment__feature">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Boardroom and executive etiquette</span>
+                </li>
+                <li class="segment__feature">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Cross-cultural negotiation readiness</span>
+                </li>
+                <li class="segment__feature">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Leadership communication and influence</span>
+                </li>
+                <li class="segment__feature">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Client-facing excellence standards</span>
+                </li>
+              </ul>
+      
+              <a class="btn btn--primary segment__cta" href="#contact">
+                Request Corporate Consultation
+              </a>
+            </div>
+      
+            <!-- Right: Visual -->
+            <div class="segment__visual" aria-hidden="true">
+              <div class="segment__frame">
+                <div class="segment__frame-accent"></div>
+                <div class="segment__frame-inner">
+                  <div class="segment__image-placeholder"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRIVATE CLIENTS -->
+      <section id="private" class="section segment segment--private">
+        <div class="container">
+          <div class="segment__layout">
+            <!-- Left: Content -->
+            <div class="segment__content">
+              <p class="small-caps">For Private Clients</p>
+              <h2>Refinement, Legacy, and High Society Protocol</h2>
+              <div class="divider-gold"></div>
+      
+              <p class="segment__lead">
+                ISEDA works discreetly with private individuals and families to cultivate impeccable etiquette, personal branding, and diplomatic social presence.
+              </p>
+      
+              <ul class="segment__features">
+                <li class="segment__feature">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>High society and international protocol</span>
+                </li>
+                <li class="segment__feature">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Personal brand refinement</span>
+                </li>
+                <li class="segment__feature">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Family legacy and representation</span>
+                </li>
+                <li class="segment__feature">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                  <span>Discreet one-to-one advisory</span>
+                </li>
+              </ul>
+      
+              <a class="btn btn--primary segment__cta" href="#contact">
+                Request Private Consultation
+              </a>
+            </div>
+      
+            <!-- Right: Visual -->
+            <div class="segment__visual" aria-hidden="true">
+              <div class="segment__frame">
+                <div class="segment__frame-accent"></div>
+                <div class="segment__frame-inner">
+                  <div class="segment__image-placeholder"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INSIGHTS -->
+      <section id="insights" class="section insights">
+        <div class="container container--medium">
+          <header class="section-header">
+            <p class="small-caps">Insights</p>
+            <h2>Thought Leadership & Global Perspective</h2>
+            <div class="divider-gold"></div>
+            <p class="section-subtitle">
+              Perspectives on etiquette, diplomacy, leadership, and international culture from ISEDA.
+            </p>
+          </header>
+      
+          <div class="insights__grid">
+            <!-- Insight 1 -->
+            <article class="insight-card">
+              <h3>The Power of Etiquette in Global Leadership</h3>
+              <p>
+                Why refined conduct and cultural intelligence remain decisive advantages in modern diplomacy and business.
+              </p>
+              <a class="insight-card__link" href="#">
+                Read article <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+      
+            <!-- Insight 2 -->
+            <article class="insight-card">
+              <h3>Diplomatic Protocol in a Modern World</h3>
+              <p>
+                How timeless principles of protocol continue to guide international relations in the 21st century.
+              </p>
+              <a class="insight-card__link" href="#">
+                Read article <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+      
+            <!-- Insight 3 -->
+            <article class="insight-card">
+              <h3>Luxury Service as a Strategic Asset</h3>
+              <p>
+                The role of discretion, anticipation, and refinement in delivering exceptional high-end hospitality.
+              </p>
+              <a class="insight-card__link" href="#">
+                Read article <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section contact">
+        <div class="container container--medium">
+          <header class="section-header">
+            <p class="small-caps">Contact</p>
+            <h2>Request a Private Consultation</h2>
+            <div class="divider-gold"></div>
+            <p class="section-subtitle">
+              Begin a discreet conversation with ISEDA to explore tailored programs and advisory services.
+            </p>
+          </header>
+      
+          <form class="contact-form" action="#" method="post" novalidate>
+            <div class="contact-form__grid">
+              <div class="contact-form__field">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+      
+              <div class="contact-form__field">
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+      
+              <div class="contact-form__field">
+                <label for="organization">Organization</label>
+                <input id="organization" name="organization" type="text" />
+              </div>
+      
+              <div class="contact-form__field">
+                <label for="interest">Area of Interest</label>
+                <select id="interest" name="interest">
+                  <option>Corporate Programs</option>
+                  <option>Luxury Hospitality</option>
+                  <option>Private Advisory</option>
+                  <option>Diplomatic Training</option>
+                </select>
+              </div>
+      
+              <div class="contact-form__field contact-form__field--full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+              </div>
+            </div>
+      
+            <div class="contact-form__actions">
+              <button type="submit" class="btn btn--primary">
+                Submit Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+          <div class="footer__grid">
+            <!-- Brand -->
+            <div class="footer__brand">
+              <img
+                src="assets/images/ISEDA_Logo_white.png"
+                alt="ISEDA - International Institute of Etiquette & Diplomatic Arts"
+                class="footer__logo"
+              />
+              <p class="footer__tagline">
+                Elevating global standards of etiquette, diplomacy, and executive excellence.
+              </p>
+            </div>
+      
+            <!-- Navigation -->
+            <nav class="footer__nav" aria-label="Footer navigation">
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#hotels">Hotels</a></li>
+                <li><a href="#corporations">Corporations</a></li>
+                <li><a href="#private">Private Clients</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+      
+            <!-- Contact -->
+            <div class="footer__contact">
+              <p class="footer__label">Contact</p>
+              <p>Private consultations by appointment only.</p>
+              <a href="mailto:info@iseda.org">info@iseda.org</a>
+            </div>
+          </div>
+      
+          <div class="footer__bottom">
+            <p>&copy; <span id="year"></span> ISEDA. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="main.js" defer></script>
+  </body>
+</html>
