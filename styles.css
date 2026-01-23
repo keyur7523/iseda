@@ -547,8 +547,13 @@
     opacity: 0.98;
   }
 
+  .hero__tagline {
+    font-size: var(--text-md);
+    letter-spacing: 0.22em;
+  }
+
   .hero__title {
-    font-size: 2.6rem;
+    font-size: 2.1rem;
     line-height: 1.05;
   }
   
@@ -1052,9 +1057,9 @@
     }
   
     .hero__title {
-      font-size: 3.6rem;
+      font-size: 2.9rem;
     }
-  
+
     .hero__subtitle {
       font-size: var(--text-lg);
     }
@@ -1153,9 +1158,9 @@
     }
   
     .hero__title {
-      font-size: 4.4rem;
+      font-size: 3.5rem;
     }
-  
+
     .hero__subtitle {
       font-size: var(--text-xl);
     }
