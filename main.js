@@ -120,7 +120,7 @@
       }
   
       if (overlay) {
-        window.gsap.set(overlay, { opacity: 0.55 });
+        window.gsap.set(overlay, { opacity: 0.85 });
       }
   
       const tl = window.gsap.timeline({ defaults: { ease: "power3.out" } });
@@ -130,7 +130,7 @@
       }
   
       if (overlay) {
-        tl.to(overlay, { opacity: 0.35, duration: 1.2 }, 0);
+        tl.to(overlay, { opacity: 1, duration: 1.2 }, 0);
       }
   
       tl.to(
