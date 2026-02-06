@@ -74,6 +74,7 @@
     --space-4: 1rem;
     --space-6: 1.5rem;
     --space-8: 2rem;
+    --space-10: 2.5rem;
     --space-12: 3rem;
     --space-16: 4rem;
     --space-20: 5rem;
@@ -1135,7 +1136,8 @@
 
   .footer__tagline {
     max-width: 100%;
-    font-size: var(--text-sm);
+    margin-top: var(--space-6);
+    font-size: var(--text-lg);
     color: var(--text-light-secondary);
   }
 
